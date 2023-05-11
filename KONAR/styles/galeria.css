@@ -1,0 +1,10 @@
+#galeria{
+    background-color: var(--primary-dark);
+    color: var(--primary-white);
+}
+
+#galeria .container{
+    padding: 4rem 0 4rem 0;
+    justify-content: center;
+}
+

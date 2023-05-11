@@ -1,0 +1,77 @@
+#oferta{
+    background-color: var(--primary-light);
+    color: var(--accent);
+    height: auto;
+}
+
+#oferta .container{
+    padding: 4rem 2rem 4rem 2rem;
+    justify-content: center;
+}
+
+#oferta .container h1{
+    text-align: center;
+}
+
+#oferta .card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+    margin-top: 2.5rem;
+}
+
+#oferta .card-container-row{
+    display: flex;
+    justify-content: center;
+    gap: 1.75rem;
+}
+
+.card-container .card{
+    display: grid;
+    width: 150px;
+    height: 280px;
+    border-radius: 10px;
+    align-items: end;
+    transition: all .35s ease-out;
+}
+
+.card-container .card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card-container .card:hover>.card-name{
+    clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
+    background-color: var(--accent);
+    color: var(--primary-white);
+}
+
+#tarcica{
+    background-image: url(../images/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.card-container .card-name{
+    background-color: var(--primary-white);
+    height: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-dark);
+    border-radius: 0 0 10px 10px;
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+    transition: all .35s ease-out;
+}
+
+.card-name h1{
+    margin-top: .75rem;
+    font-size: 1rem;
+}
+
+#description{
+    display: none;
+}
