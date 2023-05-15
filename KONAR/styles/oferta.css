@@ -36,12 +36,14 @@
     transition: all .35s ease-out;
 }
 
-.card-container .card:hover{
+.card-container .card:hover,
+.card.active{
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.card-container .card:hover>.card-name{
+.card-container .card:hover>.card-name,
+.card.active>.card-name{
     clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
     background-color: var(--accent);
     color: var(--primary-white);
@@ -72,6 +74,18 @@
     font-size: 1rem;
 }
 
-#description{
-    display: none;
+/* ---OPIS PRODUKTÓW--- */
+
+#description_container{
+    visibility: hidden;
+    background-color: red;
+    height: 0;
+    width: auto;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+#description_container.active{
+    visibility: visible;
+    height: 100px;
 }
