@@ -10,9 +10,14 @@ const card = document.querySelector(".card-container").querySelectorAll(".card")
 
 card.forEach(element =>{
     element.addEventListener("click", () =>{
-        var elementId = element.getAttribute("id");
-
+        var elementId = element.getAttribute("id");     
         
+        function deleteActiveClassFromDesc(){
+            document.getElementById("tarcica_opis").className = "description";
+            document.getElementById("okleiny_opis").className = "description";
+            document.getElementById("el_meblowe_opis").className = "description";
+            document.getElementById("podlogi_opis").className = "description";
+        }
 
        switch (elementId){
         case "tarcica":
@@ -28,8 +33,12 @@ card.forEach(element =>{
             */
             if(descContainer.className === "" && tarcicaCard.className === "card"){
                 descContainer.classList.add("active");
+                setTimeout(() => {
+                    document.getElementById("tarcica_opis").classList.add("active");
+                }, 1100);
             } else {
                 descContainer.className = "";
+                deleteActiveClassFromDesc();
             }
 
             /*
@@ -51,6 +60,9 @@ card.forEach(element =>{
                     setTimeout(() => {
                         descContainer.classList.add("active");
                     }, 1000);
+                    setTimeout(() => {
+                        document.getElementById("tarcica_opis").classList.add("active");
+                    }, 1100);
                 }
             } 
             
@@ -63,14 +75,19 @@ card.forEach(element =>{
             else {
                 tarcicaCard.className = "card";
                 descContainer.className = "";
+                deleteActiveClassFromDesc();
             }
             break;
        
         case "okleiny":
             if(descContainer.className === "" && okleinyCard.className === "card"){
                 descContainer.classList.add("active");
+                setTimeout(() => {
+                    document.getElementById("okleiny_opis").classList.add("active");
+                }, 1100);
             } else {
                 descContainer.className = "";
+                deleteActiveClassFromDesc();
             }
 
             if(okleinyCard.className === "card"){
@@ -82,18 +99,26 @@ card.forEach(element =>{
                     setTimeout(() => {
                         descContainer.classList.add("active");
                     }, 1000);
+                    setTimeout(() => {
+                        document.getElementById("okleiny_opis").classList.add("active");
+                    }, 1100);
                 }
             } else {
                 okleinyCard.className = "card";
                 descContainer.className = "";
+                deleteActiveClassFromDesc();
             }
             break;
 
         case "el_meblowe":
             if(descContainer.className === "" && elMebloweCard.className === "card"){
                 descContainer.classList.add("active");
+                setTimeout(() => {
+                    document.getElementById("el_meblowe_opis").classList.add("active");
+                }, 1100);
             } else {
                 descContainer.className = "";
+                deleteActiveClassFromDesc();
             }
 
             if(elMebloweCard.className === "card"){
@@ -105,18 +130,26 @@ card.forEach(element =>{
                     setTimeout(() => {
                         descContainer.classList.add("active");
                     }, 1000);
+                    setTimeout(() => {
+                        document.getElementById("el_meblowe_opis").classList.add("active");
+                    }, 1100);
                 }
             } else {
                 elMebloweCard.className = "card";
                 descContainer.className = "";
+                deleteActiveClassFromDesc();
             }
             break;
 
         case "podlogi":
             if(descContainer.className === "" && podlogiCard.className === "card"){
                 descContainer.classList.add("active");
+                setTimeout(() => {
+                    document.getElementById("podlogi_opis").classList.add("active");
+                }, 1100);
             } else {
                 descContainer.className = "";
+                deleteActiveClassFromDesc();
             }
             
             if(podlogiCard.className === "card"){
@@ -128,13 +161,28 @@ card.forEach(element =>{
                     setTimeout(() => {
                         descContainer.classList.add("active");
                     }, 1000);
+                    setTimeout(() => {
+                        document.getElementById("podlogi_opis").classList.add("active");
+                    }, 1100);
                 }
             } else {
                 podlogiCard.className = "card";
                 descContainer.className = "";
+                deleteActiveClassFromDesc();
             }
             break;
        }
+        
+       if(element.classList.contains("active")){
+        $('html, body').animate({
+            scrollTop: $(descContainer).offset().top - 50
+        }, 1500, '');
+       } else {
+        $('html, body').animate({
+            scrollTop: $(document.getElementById("oferta")).offset().top
+        }, 1500, '');
+       }
+    
     });
 });
 

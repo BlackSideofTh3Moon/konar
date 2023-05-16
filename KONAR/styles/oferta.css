@@ -42,7 +42,7 @@
     transform: scale(1.1);
 }
 
-.card-container .card:hover>.card-name,
+/*.card-container .card:hover>.card-name,*/
 .card.active>.card-name{
     clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
     background-color: var(--accent);
@@ -103,7 +103,6 @@
 
 #description_container{
     visibility: hidden;
-    background-color: red;
     height: 0;
     width: auto;
     overflow: hidden;
@@ -112,5 +111,82 @@
 
 #description_container.active{
     visibility: visible;
-    height: 100px;
+    height: auto;
+    margin-top: 3.5rem;
 }
+
+.description{
+    display: grid;
+    height: 0;
+    width: 100%;
+    visibility: hidden;
+    gap: 2rem;
+    transition: all 1s ease;
+}
+
+#tarcica_opis.active{
+    height: 1833px;
+    visibility: visible;
+}
+
+#okleiny_opis.active{
+    height: 1313px;
+    visibility: visible;
+}
+
+#el_meblowe_opis.active{
+    height: 666px;
+    visibility: visible;
+}
+
+#podlogi_opis.active{
+    height: 1022px;
+    visibility: visible;
+}
+
+.description-column{
+    background-color: var(--primary-white);
+    border-radius: 10px;
+}
+
+#okleiny_opis .description-column{
+    padding-bottom: 2.5rem;
+}
+
+.description h1{
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.description ul{
+    color: var(--primary-dark);
+    margin-left: 1.5rem;
+}
+
+.description li{
+    margin-left: 2.5rem;
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+.description li.list-title:first-of-type{
+    margin-top: 0;
+}
+
+.description li.list-title{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.description .product-description{
+    padding: 2.5rem 1.75rem;
+    color: var(--primary-dark);
+}
+
+.product-description p{
+    margin: .5rem 0;
+}
+

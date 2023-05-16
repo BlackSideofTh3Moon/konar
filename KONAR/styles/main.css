@@ -17,6 +17,7 @@ body{
     font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
     max-width: 100vw;
+    scroll-behavior: smooth;
 }
 
 section{
