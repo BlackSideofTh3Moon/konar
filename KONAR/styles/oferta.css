@@ -50,12 +50,37 @@
 }
 
 #tarcica{
-    background-image: url(../images/5.jpg);
+    background-image: url(../images/tarcica/tar1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
 }
+
+#okleiny{
+    background-image: url(../images/okleiny/okl1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+#el_meblowe{
+    background-image: url(../images/el_meblowe/el1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+#podlogi{
+    background-image: url(../images/podlogi/pod1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
 
 .card-container .card-name{
     background-color: var(--primary-white);
