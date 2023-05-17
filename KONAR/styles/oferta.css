@@ -33,7 +33,7 @@
     height: 280px;
     border-radius: 10px;
     align-items: end;
-    transition: all .35s ease-out;
+    transition: all 1.9s ease, transform .35s ease-out;
 }
 
 .card-container .card:hover,
@@ -50,7 +50,7 @@
 }
 
 #tarcica{
-    background-image: url(../images/tarcica/tar1.jpg);
+    background-image: url(../images/tarcica/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -58,7 +58,7 @@
 }
 
 #okleiny{
-    background-image: url(../images/okleiny/okl1.jpg);
+    background-image: url(../images/okleiny/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -66,7 +66,7 @@
 }
 
 #el_meblowe{
-    background-image: url(../images/el_meblowe/el1.jpg);
+    background-image: url(../images/el_meblowe/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -74,7 +74,7 @@
 }
 
 #podlogi{
-    background-image: url(../images/podlogi/pod1.jpg);
+    background-image: url(../images/podlogi/1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -115,6 +115,26 @@
     margin-top: 3.5rem;
 }
 
+#tarcica_opis.active{
+    height: 1973px;
+    visibility: visible;
+}
+
+#okleiny_opis.active{
+    height: 1420px;
+    visibility: visible;
+}
+
+#el_meblowe_opis.active{
+    height: 713px;
+    visibility: visible;
+}
+
+#podlogi_opis.active{
+    height: 1135px;
+    visibility: visible;
+}
+
 .description{
     display: grid;
     height: 0;
@@ -122,26 +142,6 @@
     visibility: hidden;
     gap: 2rem;
     transition: all 1s ease;
-}
-
-#tarcica_opis.active{
-    height: 1833px;
-    visibility: visible;
-}
-
-#okleiny_opis.active{
-    height: 1313px;
-    visibility: visible;
-}
-
-#el_meblowe_opis.active{
-    height: 666px;
-    visibility: visible;
-}
-
-#podlogi_opis.active{
-    height: 1022px;
-    visibility: visible;
 }
 
 .description-column{
@@ -159,15 +159,31 @@
     font-size: 2rem;
 }
 
+.description#podlogi_opis .description-column:last-of-type h1{
+    font-size: 1.65rem;
+}
+
 .description ul{
+    display: grid;
+    gap: .35rem;
     color: var(--primary-dark);
     margin-left: 1.5rem;
+}
+
+.description#podlogi_opis ul{
+    padding-right: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .description li{
     margin-left: 2.5rem;
     list-style: none;
     font-size: 1.25rem;
+}
+
+.description li>a{
+    color: #76777a;
+    font-size: .85em;
 }
 
 .description li.list-title:first-of-type{
@@ -185,6 +201,7 @@
     padding: 2.5rem 1.75rem;
     color: var(--primary-dark);
 }
+
 
 .product-description p{
     margin: .5rem 0;
