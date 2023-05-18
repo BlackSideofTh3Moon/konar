@@ -1,4 +1,4 @@
-function sendMail(){
+document.getElementById("form_btn").addEventListener("click", () =>{
     var params = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
@@ -19,5 +19,5 @@ function sendMail(){
                 alert("Wysłano wiadomość");
             })
         .catch((err)=>console.log(err));
-}
+});
 
