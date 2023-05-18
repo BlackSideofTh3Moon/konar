@@ -1,10 +1,10 @@
 /* 
             ------------
             ---OFERTA---
-            ------------
-            
-    Karuzela zdjęć do kart w seksji OFERTA
+            ------------    
 */
+
+// Karuzela zdjęć do kart w seksji OFERTA
 const cardBg = [
     document.getElementById("tarcica"),
     document.getElementById("okleiny"),
@@ -12,8 +12,9 @@ const cardBg = [
     document.getElementById("podlogi")
 ];
 cardBg.forEach(element =>{
+
     var elementId = element.getAttribute("id");
-    var slideTime = 6000; // 3 seconds
+    var slideTime = 6000; // 6 sekund
     var images = [];
     var i = 0;
     
@@ -30,8 +31,26 @@ cardBg.forEach(element =>{
             } 
             setTimeout(changePicture, slideTime);
     }
-        window.onload = changePicture();
-        
- 
+        document.getElementById("oferta").onload = changePicture();
+
 });
  
+/*
+            -------------
+            ---KONTAKT---
+            -------------
+*/
+
+// ---Formularz---
+
+// Najechanie na przycisk kursorem
+document.getElementById("form_btn").addEventListener("mouseover", () =>{
+    document.getElementById("form_btn_bg").style.height = "48px";
+    document.querySelector("#form_btn a").style.color = "var(--primary-white)";
+});
+
+// Zjechanie z przycisku kursorem
+document.getElementById("form_btn").addEventListener("mouseleave", () =>{
+    document.getElementById("form_btn_bg").style.height = "4px";
+    document.querySelector("#form_btn a").style.color = "var(--primary-dark)";
+});   

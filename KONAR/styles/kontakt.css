@@ -48,7 +48,7 @@
     gap: 3rem;
 }
 
-.form{
+form{
     display: grid;
     justify-content: center;
     gap: .5rem;
@@ -64,22 +64,51 @@
     border: 4px solid;
     border-color: var(--primary-dark);
     outline: none;
+    text-indent: 1rem;
 }
 
 textarea.form-control{
     height: auto;
+    padding-top: .5rem;
     min-height: 80px;
     resize: none;
+    justify-content: center;
 }
 
-button.form-control{
+div#form_btn{
     height: 48px;
     width: 260px;
     align-items: center;
-    background-color: var(--primary-dark);
     color: var(--primary-white);
     font-size: 1rem;
     text-transform: uppercase;
+    letter-spacing: .25rem;
+    cursor: pointer;
+    text-indent: 0;
+    text-align: center;
+    border: 0;
+}
+
+#form_btn a{
+    position: relative;
+    color: var(--primary-dark);
+    z-index: 2;
+    transition: all .5s ease;
+}
+
+#form_btn #form_btn_bg{
+    position: absolute;
+    height: 4px;
+    width: 260px;
+    align-self: flex-end;
+    background-color: var(--primary-dark);
+    z-index: 1;
+    transition: all .5s ease-out;
+}
+
+textarea::placeholder{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
     letter-spacing: .25rem;
 }
 
@@ -95,7 +124,3 @@ button.form-control{
     height: 55vh;
     border: 0;
 }
-
-
-
-

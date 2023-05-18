@@ -12,6 +12,7 @@ card.forEach(element =>{
     element.addEventListener("click", () =>{
         var elementId = element.getAttribute("id");     
         
+        // Funkcja, która usuwa klasę ACTIVE każdemu kontenerowi z opisem produktu
         function deleteActiveClassFromDesc(){
             document.getElementById("tarcica_opis").className = "description";
             document.getElementById("okleiny_opis").className = "description";
