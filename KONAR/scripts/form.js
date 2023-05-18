@@ -5,7 +5,7 @@ document.getElementById("form_btn").addEventListener("click", () =>{
         message: document.getElementById("message").value,
     };
     const serviceID = "service_1uqzuxx";
-    const templateID = "template_fclclpr";
+    const templateID = "template_fclclp";
 
     emailjs
         .send(serviceID,templateID,params)
