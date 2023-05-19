@@ -145,6 +145,8 @@
 }
 
 .description-column{
+    display: grid;
+    align-items: center;
     background-color: var(--primary-white);
     border-radius: 10px;
 }
