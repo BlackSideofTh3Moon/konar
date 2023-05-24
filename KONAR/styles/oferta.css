@@ -103,7 +103,6 @@
 
 #description_container{
     visibility: hidden;
-    height: 0;
     width: auto;
     overflow: hidden;
     transition: all 1s ease;
@@ -111,7 +110,6 @@
 
 #description_container.active{
     visibility: visible;
-    height: auto;
     margin-top: 3.5rem;
 }
 
@@ -147,6 +145,9 @@
 .description-column{
     display: grid;
     align-items: center;
+    justify-self: center;
+    width: 100%;
+    max-width: 400px;
     background-color: var(--primary-white);
     border-radius: 10px;
 }
@@ -204,8 +205,92 @@
     color: var(--primary-dark);
 }
 
+#okleiny_opis .product-description{
+    padding: 2.5rem 0;
+    text-indent: 3rem;
+}
+
 
 .product-description p{
     margin: .5rem 0;
 }
 
+
+
+@media (min-width: 896px){
+    .description{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #tarcica_opis.active{
+        height: 1213px;
+    }
+
+    #tarcica_opis :first-child{
+        order: 1;
+    }
+
+    #tarcica_opis :nth-child(2){
+        order: 3;
+    }
+
+    #tarcica_opis :last-child{
+        order: 2;
+        height: auto;
+    }
+    
+    #okleiny_opis.active{
+        height: 715px;
+    }
+
+    #okleiny_opis .description-column:nth-of-type(3){
+        transform: translate(0px, -178px);
+        height: 291px;
+    }
+    
+    #el_meblowe_opis.active{
+        height: 376px;
+    }
+    
+    #podlogi_opis.active{
+        height: 582px;
+    }
+
+    .description-column{
+        display: block;
+        min-width: 330px;
+        max-width: 400px;
+        height: fit-content;
+    }
+}
+
+@media (min-width: 1328px){
+    .card-container .card{
+        height: 380px;
+        width: 250px;
+    }
+
+    .card-container .card-name{
+        height: 80px;
+    }
+
+    .card-name h1{
+        font-size: 1.25rem;
+    }
+
+    #tarcica_opis.active{
+        height: 741px;
+    }
+
+    #tarcica_opis :last-child{
+        order: 4;
+        height: fit-content;
+    }
+
+    #okleiny_opis .description-column:nth-of-type(3){
+        transform: none;
+        height: fit-content;
+    }
+}

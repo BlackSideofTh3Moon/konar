@@ -29,7 +29,7 @@
     </script>
     <script type="text/javascript">
     (function(){
-        emailjs.init("PZQXz6hc78vroaaD");
+        emailjs.init("PZQXz6hc78vroaaDl");
     })();
     </script>
 </head>
@@ -46,6 +46,7 @@
     </section>
     <section id="o_nas">
         <div class="container">
+            <!--
             <nav>
                 <img src="../KONAR/images/logo1.png" alt="logo">
                 <ul>
@@ -55,7 +56,8 @@
                     <li><a href="#kontakt">KONTAKT</a></li>
                 </ul>
             </nav>
-            <img src="../KONAR/images/img_4691.jpg" alt="firma">
+            -->
+            <img src="../KONAR/images/okleiny/2.jpg" alt="firma">
             <div id="opis_firmy">
                 <p>O NAS</p>
                 <p>
@@ -71,7 +73,7 @@
     </section>
     <section id="oferta">
         <div class="container">
-            <h1>OFERTA</h1>
+            <h1 class="header">OFERTA</h1>
             <div class="card-container">
                 <div class="card-container-row">
                     <div class="card" id="tarcica">
@@ -259,7 +261,7 @@
     </section>
     <section id="galeria">
         <div class="container">
-            <h1>GALERIA</h1>
+            <h1 class="header">GALERIA</h1>
             <div class="photo-container">
 
             </div>
@@ -268,7 +270,7 @@
     <section id="kontakt">
         <div class="container">
             <div class="contact-data">
-                <h1>DANE KONTAKTOWE</h1>
+                <h1 class="header">DANE KONTAKTOWE</h1>
                 <div class="data">
                     <div class="data-item">
                         <h1>Właściciel firmy:</h1>
@@ -296,15 +298,16 @@
                 </div>
             </div>
             <div class="contact-form">
-                <h1>FORMULARZ KONTAKTOWY</h1>
+                <h1 class="header">FORMULARZ KONTAKTOWY</h1>
                 <form>
-                    <input type="text" class="form-control" id="name" placeholder="Imię i Nazwisko" required/>
-                    <input type="email" class="form-control" id="email" placeholder="E-mail" required/>
+                    <input type="text" class="form-control" id="name" placeholder="Imię i Nazwisko*" required/>
+                    <input type="email" class="form-control" id="email" placeholder="E-mail*" required/>
                     <textarea class="form-control" title="Twoja wiadomość" id="message" placeholder="....."></textarea>
-                    <div type="submit" class="form-control" id="form_btn">
+                    <div class="form-control" id="form_btn" onclick="sendForm()">
                         <a>Wyślij</a>
                         <div id="form_btn_bg"></div>
                     </div>
+                    <div class="form-control" id="form_result"></div>
                 </form>
             </div>
             <div class="contact-map">

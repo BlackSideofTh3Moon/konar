@@ -51,6 +51,8 @@ document.getElementById("form_btn").addEventListener("mouseover", () =>{
 
 // Zjechanie z przycisku kursorem
 document.getElementById("form_btn").addEventListener("mouseleave", () =>{
-    document.getElementById("form_btn_bg").style.height = "4px";
-    document.querySelector("#form_btn a").style.color = "var(--primary-dark)";
+    if(document.body.offsetWidth >= 992){
+        document.getElementById("form_btn_bg").style.height = "4px";
+        document.querySelector("#form_btn a").style.color = "var(--primary-dark)";
+    }
 });   

@@ -28,7 +28,7 @@ function sendForm(){
     if(params.name === "" || params.email === null){
         result.textContent = "Wypełnij dane prawidłowo!";
         result.style.display = "grid";
-        result.style.color = "red";
+        result.style.color = "var(--primary-white)";
     }
    
     else{
@@ -50,15 +50,19 @@ function sendForm(){
                     console.log(res);
 
                     // Informacja odnośnie wysłąnia formularza
+                    result.style.display = "none";
                     btn.querySelector('a').textContent ="Wysłano!";
                     btnbg.style.height = "48px";
-                    btn.style.color = "var(--primary-white)";
+                    btn.querySelector('a').style.color = "var(--primary-white)";
                     
+                    // Przywrócenie domyślnego wyglądu przycisku
                     setTimeout(() => {
                         btn.setAttribute('onclick', 'sendForm()');
                         btn.querySelector('a').textContent ="Wyślij";
-                        btnbg.style.height = "4px";
+                        if(document.body.offsetWidth >= 992){
+                            btnbg.style.height = "4px";
                         btn.querySelector('a').style.color = "var(--primary-dark)";
+                        }
                     }, 10000);     
                 })
             .catch((err)=>console.log(err));

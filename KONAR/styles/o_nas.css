@@ -1,8 +1,6 @@
 #o_nas{
     background-color: var(--primary-white);
     display: block;
-    min-height: 700px;
-    max-height: 800px;
 }
 
 #o_nas nav{
@@ -77,4 +75,52 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    #o_nas{
+        min-height: 700px;
+        max-height: 800px;
+    }
+}
+
+@media (min-width: 768px) {
+    #o_nas{
+        display: grid;
+        min-height: auto;
+        height: auto;
+    }
+
+    #o_nas .container{
+        display: flex;
+    }
+
+    #o_nas img{
+        width: auto;
+        max-width: 50%;
+        min-height: 250px;
+        height: auto;
+        max-height: 500px;
+        position:sticky;
+        z-index: 0;
+    }
+
+    #o_nas #opis_firmy{
+        display: grid;
+        width: 450px;
+        height: auto;
+        margin: auto;
+        gap: 1rem;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        position: relative;
+        transform: none;
+        font-size: 1.2em;
+        z-index: 1;
+    }
+
+    #o_nas #opis_firmy p:first-child{
+        font-size: 2.5rem;
+    }
 }
