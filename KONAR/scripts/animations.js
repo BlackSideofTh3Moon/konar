@@ -56,3 +56,15 @@ document.getElementById("form_btn").addEventListener("mouseleave", () =>{
         document.querySelector("#form_btn a").style.color = "var(--primary-dark)";
     }
 });   
+
+/*
+            ------------
+            ---STOPKA---
+            ------------
+*/
+
+document.querySelector("footer a").addEventListener("click", () =>{
+    $('html, body').animate({
+        scrollTop: $('body').offset().top = 0
+    }, 1500, '');
+});
