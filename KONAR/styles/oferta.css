@@ -113,29 +113,15 @@
     margin-top: 3.5rem;
 }
 
-#tarcica_opis.active{
-    height: 2003px;
+.description.active{
     visibility: visible;
+    max-height: 3000px;
 }
 
-#okleiny_opis.active{
-    height: 1450px;
-    visibility: visible;
-}
-
-#el_meblowe_opis.active{
-    height: 743px;
-    visibility: visible;
-}
-
-#podlogi_opis.active{
-    height: 1185px;
-    visibility: visible;
-}
 
 .description{
     display: grid;
-    height: 0;
+    max-height: 0;
     width: 100%;
     visibility: hidden;
     gap: 2rem;
@@ -224,10 +210,6 @@
         justify-content: center;
     }
 
-    #tarcica_opis.active{
-        height: 1213px;
-    }
-
     #tarcica_opis :first-child{
         order: 1;
     }
@@ -242,20 +224,12 @@
     }
     
     #okleiny_opis.active{
-        height: 715px;
+        max-height: 715px;
     }
 
     #okleiny_opis .description-column:nth-of-type(3){
         transform: translate(0px, -178px);
         height: 291px;
-    }
-    
-    #el_meblowe_opis.active{
-        height: 376px;
-    }
-    
-    #podlogi_opis.active{
-        height: 582px;
     }
 
     .description-column{
@@ -278,10 +252,6 @@
 
     .card-name h1{
         font-size: 1.25rem;
-    }
-
-    #tarcica_opis.active{
-        height: 741px;
     }
 
     #tarcica_opis :last-child{
