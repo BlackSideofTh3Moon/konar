@@ -137,7 +137,6 @@ nav li:hover{
         ), url(../images/8.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
         background-attachment: fixed;
         background-blend-mode: darken;
     }
@@ -153,6 +152,10 @@ nav li:hover{
 }
 
 @media (min-width: 1328px){
+    #o_nas{
+        background-position: center;
+    }
+
     #o_nas .container{
         padding-left: 6rem;
     }
