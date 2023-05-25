@@ -115,7 +115,7 @@
 
 .description.active{
     visibility: visible;
-    max-height: 3000px;
+    max-height: 2150px;
 }
 
 
@@ -201,8 +201,6 @@
     margin: .5rem 0;
 }
 
-
-
 @media (min-width: 896px){
     .description{
         display: flex;
@@ -223,6 +221,14 @@
         height: auto;
     }
     
+    .description.active{
+        max-height: 610px;
+    }
+
+    #tarcica_opis.active{
+        max-height: 1300px;
+    }
+
     #okleiny_opis.active{
         max-height: 715px;
     }
@@ -262,5 +268,10 @@
     #okleiny_opis .description-column:nth-of-type(3){
         transform: none;
         height: fit-content;
+    }
+
+    #tarcica_opis.active,
+    #okleiny_opis.active{
+        max-height: 750px;
     }
 }
