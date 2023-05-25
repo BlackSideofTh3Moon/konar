@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+html, body{
+    height: -webkit-fill-available;
+}
+
 body{
     top: 0;
     bottom: 0;
