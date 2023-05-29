@@ -1,26 +1,19 @@
 #o_nas{
     height: 100dvh;
     min-height: 420px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bg-img{
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
     background:  linear-gradient(
         rgba(0, 0, 0, 0.85), 
         rgba(0, 0, 0, 0.6)
       ), url(../images/8.jpg);
-      background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: center;
     background-attachment: fixed;
     background-blend-mode: darken;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav{
@@ -137,18 +130,15 @@ nav li:hover{
 @media (min-width: 768px) and (min-height: 900px){
     #o_nas{
         font-size: 23px;
-    }
-
-    .bg-img{
         background:  linear-gradient(
         rgba(0, 0, 0, 0.9), 
         rgba(0, 0, 0, 0.7)
-      ), url(../images/8.jpg);
-      background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-blend-mode: darken;
+        ), url(../images/8.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-blend-mode: darken;
     }
 
     nav{
