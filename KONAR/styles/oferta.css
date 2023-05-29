@@ -113,15 +113,29 @@
     margin-top: 3.5rem;
 }
 
-.description.active{
+#tarcica_opis.active{
+    height: 2003px;
     visibility: visible;
-    max-height: 2150px;
 }
 
+#okleiny_opis.active{
+    height: 1450px;
+    visibility: visible;
+}
+
+#el_meblowe_opis.active{
+    height: 743px;
+    visibility: visible;
+}
+
+#podlogi_opis.active{
+    height: 1185px;
+    visibility: visible;
+}
 
 .description{
     display: grid;
-    max-height: 0;
+    height: 0;
     width: 100%;
     visibility: hidden;
     gap: 2rem;
@@ -201,11 +215,17 @@
     margin: .5rem 0;
 }
 
+
+
 @media (min-width: 896px){
     .description{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    #tarcica_opis.active{
+        height: 1213px;
     }
 
     #tarcica_opis :first-child{
@@ -221,21 +241,21 @@
         height: auto;
     }
     
-    .description.active{
-        max-height: 610px;
-    }
-
-    #tarcica_opis.active{
-        max-height: 1300px;
-    }
-
     #okleiny_opis.active{
-        max-height: 715px;
+        height: 715px;
     }
 
     #okleiny_opis .description-column:nth-of-type(3){
         transform: translate(0px, -178px);
         height: 291px;
+    }
+    
+    #el_meblowe_opis.active{
+        height: 376px;
+    }
+    
+    #podlogi_opis.active{
+        height: 582px;
     }
 
     .description-column{
@@ -260,6 +280,10 @@
         font-size: 1.25rem;
     }
 
+    #tarcica_opis.active{
+        height: 741px;
+    }
+
     #tarcica_opis :last-child{
         order: 4;
         height: fit-content;
@@ -268,10 +292,5 @@
     #okleiny_opis .description-column:nth-of-type(3){
         transform: none;
         height: fit-content;
-    }
-
-    #tarcica_opis.active,
-    #okleiny_opis.active{
-        max-height: 750px;
     }
 }

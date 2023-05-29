@@ -1,8 +1,8 @@
 /* główne kolory */
 :root{
-    --primary-white: #f2f2f2;
+    --primary-white: rgb(242, 242, 242);
     --primary-light: #515357;
-    --primary-dark: #222831;
+    --primary-dark: rgb(34, 40, 49);
     --accent: #cc8015;
 }
 
@@ -13,10 +13,6 @@
 
 *::before, *::after{
     box-sizing: border-box;
-}
-
-html, body{
-    height: -webkit-fill-available;
 }
 
 body{

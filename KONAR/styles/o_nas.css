@@ -1,20 +1,26 @@
 #o_nas{
-    height: 100vh;
-    height: 100svh;
+    height: 100dvh;
     min-height: 420px;
-    background:  linear-gradient(
-        rgba(0, 0, 0, 0.85), 
-        rgba(0, 0, 0, 0.6)
-      ), url(../images/8.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: darken;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1s ease;
+}
+
+.bg-img{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background:  linear-gradient(
+        rgba(0, 0, 0, 0.85), 
+        rgba(0, 0, 0, 0.6)
+      ), url(../images/8.jpg);
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    background-blend-mode: darken;
 }
 
 nav{
@@ -131,14 +137,18 @@ nav li:hover{
 @media (min-width: 768px) and (min-height: 900px){
     #o_nas{
         font-size: 23px;
+    }
+
+    .bg-img{
         background:  linear-gradient(
         rgba(0, 0, 0, 0.9), 
         rgba(0, 0, 0, 0.7)
-        ), url(../images/8.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-blend-mode: darken;
+      ), url(../images/8.jpg);
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: darken;
     }
 
     nav{
@@ -152,10 +162,6 @@ nav li:hover{
 }
 
 @media (min-width: 1328px){
-    #o_nas{
-        background-position: center;
-    }
-
     #o_nas .container{
         padding-left: 6rem;
     }
