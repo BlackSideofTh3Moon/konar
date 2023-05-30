@@ -228,15 +228,15 @@
         height: 1213px;
     }
 
-    #tarcica_opis :first-child{
+    #tarcica_opis .description-column:nth-of-type(1){
         order: 1;
     }
 
-    #tarcica_opis :nth-child(2){
+    #tarcica_opis .description-column:nth-of-type(2){
         order: 3;
     }
 
-    #tarcica_opis :last-child{
+    #tarcica_opis .description-column:nth-of-type(3){
         order: 2;
         height: auto;
     }
@@ -287,6 +287,14 @@
     #tarcica_opis :last-child{
         order: 4;
         height: fit-content;
+    }
+
+    #tarcica_opis .description-column:nth-of-type(2){
+        order: 2;
+    }
+
+    #tarcica_opis .description-column:nth-of-type(3){
+        order: 3;
     }
 
     #okleiny_opis .description-column:nth-of-type(3){
