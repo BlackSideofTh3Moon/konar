@@ -1,4 +1,37 @@
 /* 
+            -----------
+            ---O NAS---
+            ------------   
+*/
+
+// Pasek nawigacyjny
+
+document.getElementById("o_nas_nav").addEventListener("click", () =>{ // o nas
+    $('html, body').animate({
+        scrollTop: $('body').offset().top = 0
+    }, 1000, '');
+});
+
+document.getElementById("oferta_nav").addEventListener("click", () =>{ // oferta
+    $('html, body').animate({
+        scrollTop: $('#oferta').offset().top
+    }, 1000, '');
+});
+
+document.getElementById("galeria_nav").addEventListener("click", () =>{ // galeria
+    $('html, body').animate({
+        scrollTop: $('#galeria').offset().top
+    }, 1000, '');
+});
+
+document.getElementById("kontakt_nav").addEventListener("click", () =>{ // kontakt
+    $('html, body').animate({
+        scrollTop: $('#kontakt').offset().top
+    }, 1000, '');
+});
+
+
+/* 
             ------------
             ---OFERTA---
             ------------    
