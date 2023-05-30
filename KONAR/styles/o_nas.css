@@ -7,6 +7,9 @@
         rgba(0, 0, 0, 0.6)
       ), url(../images/8.jpg);
     background-repeat: no-repeat;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: darken;
