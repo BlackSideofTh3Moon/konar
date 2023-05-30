@@ -6,7 +6,7 @@
 
 #galeria .container{
   display: block;
-  padding: 4rem 2rem;
+  padding: 4rem .75rem;
   justify-content: center;
 }
 
