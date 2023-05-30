@@ -6,7 +6,7 @@
 
 #galeria .container{
   display: block;
-  padding: 4rem 2rem;
+  padding: 4rem .75rem;
   justify-content: center;
 }
 
@@ -43,7 +43,7 @@
 .inner-slider .img{
   width: 280px;
   height: 100%;
-  transition: all .8s ease;
+  transition: all 1s ease;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment:scroll;
