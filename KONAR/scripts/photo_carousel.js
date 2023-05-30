@@ -1,11 +1,19 @@
 const innerSlider = document.querySelector('.inner-slider');
 const progressBar = document.querySelector('.progress-bar-inner');
 
+let images = [...document.querySelectorAll(".img")];
+images.forEach((img, idx) =>{
+    img.style.backgroundImage = `url(../KONAR/images/gallery/${idx+1}.jpg)`;
+});
+
 let sliderGrabbed = false;
 
 innerSlider.parentElement.addEventListener('scroll', (e) => {
     progressBar.style.width  = `${getScrollPercentage()}%`
-    console.log(getScrollPercentage());
+
+    images.forEach(img =>{
+    img.style.transform = `translateX(-${getScrollPercentage()/2}px)`;
+    });
 })
 
 innerSlider.addEventListener('mousedown', (e) => {
@@ -37,17 +45,6 @@ function getScrollPercentage(){
    return ((innerSlider.parentElement.scrollLeft / (innerSlider.parentElement.scrollWidth - innerSlider.parentElement.clientWidth) ) * 100);
 }
 
-let images = [...document.querySelectorAll(".img")];
-let slider = document.querySelector(".slider");
-let prevLeft =0;
 
-images.forEach((img, idx) =>{
-    img.style.backgroundImage = `url(../KONAR/images/gallery/${idx+1}.jpg)`;
-});
-slider.addEventListener("scroll", () =>{
-    images.forEach(img =>{
-       img.style.transform = `translateX(-${getScrollPercentage()/2}px)`;
-    })
 
     
-});
