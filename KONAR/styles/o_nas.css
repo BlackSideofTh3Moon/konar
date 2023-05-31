@@ -65,6 +65,10 @@ nav li{
 }
 
 @media (min-width: 500px) and (min-height: 500px){
+    #o_nas{
+        background-attachment: fixed;
+    }
+
     @media (hover: hover){
         nav li:hover{
             cursor: pointer;
@@ -109,11 +113,6 @@ nav li{
     width: -moz-fit-content;
 }
 
-@media (min-width: 500px){
-    #o_nas{
-        background-attachment: fixed;
-    }
-}
 
 @media (min-width: 768px){
     #o_nas .container{
