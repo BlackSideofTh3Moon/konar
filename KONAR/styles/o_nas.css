@@ -1,29 +1,24 @@
 #o_nas{
     height: 100dvh;
-    min-height: 420px;
+    min-height: 100vh;
     max-width: 100vw;
+    background:  linear-gradient(
+        rgba(0, 0, 0, 0.85), 
+        rgba(0, 0, 0, 0.6)
+      ), url(../images/mbg.jpg);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.background{
-    position: absolute;
-    height: 100dvh;
-    width: 100vw;
-    z-index: -1;
-    background:  linear-gradient(
-        rgba(0, 0, 0, 0.85), 
-        rgba(0, 0, 0, 0.6)
-      ), url(../images/mbg.jpg);
-      -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-blend-mode: darken;
-}
+
 
 nav{
     display: flex;
@@ -71,8 +66,14 @@ nav li{
     transition: all 1s ease;
 }
 
-nav li:hover{
-    cursor: pointer;
+@media (hover: hover){
+    nav li:hover{
+        background:  linear-gradient(
+            rgba(204, 128, 21, 0.75), 
+            rgba(204, 128, 21, 0)
+          );
+          cursor: pointer;
+    }
 }
 
 #o_nas .container{
@@ -108,15 +109,6 @@ nav li:hover{
     width: -moz-fit-content;
 }
 
-@media (min-width: 500px){
-    nav li:hover{
-        background:  linear-gradient(
-            rgba(204, 128, 21, 0.75), 
-            rgba(204, 128, 21, 0)
-          );
-    }
-    
-}
 
 @media (min-width: 768px){
     #o_nas .container{
