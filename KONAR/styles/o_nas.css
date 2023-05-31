@@ -64,14 +64,14 @@ nav li{
     transition: all 1s ease;
 }
 
-@media (hover: none){
+@media (hover: none) and (pointer: coarse){
     nav li:hover{
         cursor: pointer;
         background: none;
     }
 }
 
-@media (any-hover: hover){
+@media (hover: hover){
     nav li:hover{
         cursor: pointer;
         background:  linear-gradient(
