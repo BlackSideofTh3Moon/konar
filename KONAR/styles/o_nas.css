@@ -23,8 +23,8 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
-    min-height: 100vh;
+    height: 100dvh;
+    min-height: 100dvh;
     background:  linear-gradient(
         rgba(0, 0, 0, 0.85), 
         rgba(0, 0, 0, 0.6)
@@ -175,8 +175,8 @@ nav li{
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100vh;
-        min-height: 100vh;
+        height: 100dvh;
+        min-height: 100dvh;
         background:  linear-gradient(
             rgba(0, 0, 0, 0.9), 
             rgba(0, 0, 0, 0.7)
