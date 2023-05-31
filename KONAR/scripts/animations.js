@@ -109,3 +109,17 @@ document.getElementById("form_btn").addEventListener("mouseleave", () =>{
             ------------
 */
 
+function screenRes(){
+    a = document.getElementById("o_nas").style.height = `${screen.height}px`;
+    console.log(a)
+}
+
+function screenBack(){
+    b = document.getElementById("o_nas").style.height = '100dvh';
+    console.log(b)
+}
+
+if(screen.width <= 500){
+window.addEventListener('onload', screenRes());
+window.addEventListener('resize', screenBack());
+}
