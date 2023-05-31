@@ -64,8 +64,14 @@ nav li{
     transition: all 1s ease;
 }
 
-nav li:hover{
-    cursor: pointer;
+@media (hover: hover){
+    nav li:hover{
+        cursor: pointer;
+        background:  linear-gradient(
+            rgba(204, 128, 21, 0.75), 
+            rgba(204, 128, 21, 0)
+        );
+    }
 }
 
 #o_nas .container{
@@ -104,13 +110,6 @@ nav li:hover{
 @media (min-width: 500px){
     #o_nas{
         background-attachment: fixed;
-    }
-
-    nav li:hover{
-        background:  linear-gradient(
-            rgba(204, 128, 21, 0.75), 
-            rgba(204, 128, 21, 0)
-          );
     }
 }
 
