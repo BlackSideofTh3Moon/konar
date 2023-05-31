@@ -6,6 +6,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: transparent;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .bg{
@@ -29,12 +36,12 @@
         rgba(0, 0, 0, 0.85), 
         rgba(0, 0, 0, 0.6)
       ), url(../images/bg.jpg);
-      -o-background-size: cover;
+    -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-blend-mode: darken;
     z-index: -1;
 }
