@@ -50,7 +50,7 @@ cardBg.forEach(element =>{
     var slideTime = 6000; // 6 sekund
     var images = [];
     var i = 0;
-    
+
     images[0] = '../KONAR/images/' + elementId + '/1.jpg';
     images[1] = '../KONAR/images/' + elementId + '/2.jpg';
     images[2] = '../KONAR/images/' + elementId + '/3.jpg';

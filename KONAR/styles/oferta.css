@@ -37,6 +37,13 @@
     transition: all 1.9s ease, transform .35s ease-out;
 }
 
+@media(hover: hover){
+    .card:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
 .card.active{
     cursor: pointer;
     transform: scale(1.1);
@@ -214,12 +221,6 @@
     margin: .5rem 0;
 }
 
-@media (min-width: 500px){
-    .card-container .card:hover{
-        cursor: pointer;
-        transform: scale(1.1);
-    }
-}
 
 @media (min-width: 896px){
     .description{
