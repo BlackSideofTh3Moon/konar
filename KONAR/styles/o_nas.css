@@ -64,20 +64,15 @@ nav li{
     transition: all 1s ease;
 }
 
-@media (hover: none) and (pointer: coarse){
-    nav li:hover{
-        cursor: pointer;
-        background: none;
-    }
-}
-
-@media (hover: hover){
-    nav li:hover{
-        cursor: pointer;
-        background:  linear-gradient(
-            rgba(204, 128, 21, 0.75), 
-            rgba(204, 128, 21, 0)
-        );
+@media (min-width: 500px) and (min-height: 500px){
+    @media (hover: hover){
+        nav li:hover{
+            cursor: pointer;
+            background:  linear-gradient(
+                rgba(204, 128, 21, 0.75), 
+                rgba(204, 128, 21, 0)
+            );
+        }
     }
 }
 
