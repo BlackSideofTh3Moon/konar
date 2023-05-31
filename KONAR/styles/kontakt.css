@@ -1,5 +1,6 @@
 #kontakt{
     height: auto;
+    background-color: var(--primary-white);
 }
 
 #kontakt .container{
