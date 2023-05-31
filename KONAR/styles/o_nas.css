@@ -15,23 +15,14 @@
     background-attachment: fixed;
 }
 
-.bg{
-    width: 0;
-    height: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    
-}
 
-.bg_ios{
+.bg{
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100svh;
-    min-height: 100svh;
+    height: 100%;
+    min-height: 100%;
     background:  linear-gradient(
         rgba(0, 0, 0, 0.85), 
         rgba(0, 0, 0, 0.6)
@@ -168,22 +159,14 @@ nav li{
         font-size: 23px;
     }
 
-    .bg{
-        width: 0;
-        height: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: transparent;
-    }
     
-    .bg_ios{
+    .bg{
         position: absolute;
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100svh;
-        min-height: 100svh;
+        height: 100%;
+        min-height: 100%;
         background:  linear-gradient(
             rgba(0, 0, 0, 0.9), 
             rgba(0, 0, 0, 0.7)
