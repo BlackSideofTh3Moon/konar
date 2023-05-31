@@ -64,6 +64,13 @@ nav li{
     transition: all 1s ease;
 }
 
+@media (hover: none){
+    nav li:hover{
+        cursor: pointer;
+        background: none;
+    }
+}
+
 @media (any-hover: hover){
     nav li:hover{
         cursor: pointer;
