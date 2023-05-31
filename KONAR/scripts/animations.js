@@ -120,6 +120,9 @@ function screenBack(){
 }
 
 if(screen.width <= 500){
-window.addEventListener('onload', screenRes());
-window.addEventListener('resize', screenBack());
+    window.addEventListener('onload', screenRes());
 }
+else{
+    window.addEventListener('resize', screenBack());
+}
+
