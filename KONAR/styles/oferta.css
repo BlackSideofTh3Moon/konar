@@ -37,13 +37,11 @@
     transition: all 1.9s ease, transform .35s ease-out;
 }
 
-.card-container .card:hover,
 .card.active{
     cursor: pointer;
     transform: scale(1.1);
 }
 
-/*.card-container .card:hover>.card-name,*/
 .card.active>.card-name{
     clip-path: polygon(0 0, 100% 30%, 100% 100%, 0% 100%);
     background-color: var(--accent);
@@ -216,7 +214,12 @@
     margin: .5rem 0;
 }
 
-
+@media (min-width: 500px){
+    .card-container .card:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
 
 @media (min-width: 896px){
     .description{

@@ -66,10 +66,6 @@ nav li{
 }
 
 nav li:hover{
-    background:  linear-gradient(
-        rgba(204, 128, 21, 0.75), 
-        rgba(204, 128, 21, 0)
-      );
     cursor: pointer;
 }
 
@@ -104,6 +100,15 @@ nav li:hover{
     -webkit-text-fill-color: transparent;
     width: fit-content;
     width: -moz-fit-content;
+}
+
+@media (min-width: 500px){
+    nav li:hover{
+        background:  linear-gradient(
+            rgba(204, 128, 21, 0.75), 
+            rgba(204, 128, 21, 0)
+          );
+    }
 }
 
 @media (min-width: 768px){
