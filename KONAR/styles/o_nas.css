@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    max-height: fit-content;
+    max-height: max-content;
 }
 
 .bg{
