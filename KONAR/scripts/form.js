@@ -22,7 +22,7 @@ function sendForm(){
     };
 
     const serviceID = "service_9q1ksgt";
-    const templateID = "template_8r8m7kd";
+    const templateID = "template_0r8m7kd";
 
     var result = document.getElementById("form_result"); // Blok z wynikiem
     if(params.name === "" || params.email === null){
