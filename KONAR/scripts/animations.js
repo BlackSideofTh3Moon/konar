@@ -120,7 +120,7 @@ function screenBack(){
 }
 
 window.addEventListener('onload', () =>{
-    if(screen.height > screen.width){
+    if(screen.height > $(window).width()){
         screenRes();
     }
     else{
@@ -130,7 +130,7 @@ window.addEventListener('onload', () =>{
 
 window.addEventListener('resize', () =>{
 
-    if(screen.height > screen.width){
+    if(screen.height > $(window).width()){
         screenRes();
     }
     else{
