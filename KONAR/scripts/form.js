@@ -21,8 +21,8 @@ function sendForm(){
         message: document.getElementById("message").value,
     };
 
-    const serviceID = "service_1uqzuxx";
-    const templateID = "template_fclclpr";
+    const serviceID = "service_9q1ksgt";
+    const templateID = "template_8r8m7kd";
 
     var result = document.getElementById("form_result"); // Blok z wynikiem
     if(params.name === "" || params.email === null){
