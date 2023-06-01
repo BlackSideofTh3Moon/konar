@@ -121,7 +121,7 @@ function screenBack(){
 }
 
 window.addEventListener('onload', () =>{
-    if(screen.height > $(window).width()){
+    if(screen.height > $(document).width()){
         screenRes();
     }
     else{
@@ -131,7 +131,7 @@ window.addEventListener('onload', () =>{
 
 window.addEventListener('resize', () =>{
     alert("szju szju szji szju");
-    if(screen.height > $(window).width()){
+    if(screen.height > $(document).width()){
         screenRes();
     }
     else{
