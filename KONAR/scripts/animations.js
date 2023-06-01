@@ -130,7 +130,7 @@ window.addEventListener('onload', () =>{
 });
 
 window.addEventListener('resize', () =>{
-
+    alert("szju szju szji szju");
     if(screen.height > $(window).width()){
         screenRes();
     }
