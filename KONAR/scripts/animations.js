@@ -116,7 +116,7 @@ function screenRes(){
 }
 
 function screenBack(){
-    document.getElementById("o_nas").style.height = '100dvh';
+    document.getElementById("o_nas").style.height = '100vh';
     alert("szju szju szji szju")
 }
 
