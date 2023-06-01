@@ -119,16 +119,21 @@ function screenBack(){
     document.getElementById("o_nas").style.height = '100dvh';
 }
 
-window.addEventListener('onload', screenRes());
+window.addEventListener('onload', () =>{
+    if(screen.height > screen.width){
+        screenRes();
+    }
+    else{
+        screenBack();
+    }
+});
 
 window.addEventListener('resize', () =>{
 
-    if(screen.width <= 500){
+    if(screen.height > screen.width){
         screenRes();
     }
     else{
         screenBack();
     }
 })
-
-
